@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corgi vs Jacarés</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Corgi Chomp! 🐶🐊</h1>
+            <div class="stats">
+                <div class="score-board">Pontos: <span id="score">0</span></div>
+                <div class="time-board">Tempo: <span id="time">30</span>s</div>
+            </div>
+        </header>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div id="gameOverScreen" class="overlay hidden">
+            <h2>Fim de Jogo!</h2>
+            <p>Sua pontuação: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Jogar Novamente</button>
+        </div>
+        
+        <div id="startScreen" class="overlay">
+            <h2>Corgi Chomp!</h2>
+            <p>Use as setas para mover o Corgi 🐶.</p>
+            <p>Coma os jacarés 🐊 para ganhar pontos!</p>
+            <p>Você tem 30 segundos.</p>
+            <button id="startBtn">Iniciar Jogo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
